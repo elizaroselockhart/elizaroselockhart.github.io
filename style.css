@@ -88,6 +88,11 @@ nav a:hover {
     color: var(--accent-dark);
 }
 
+h1, h2, h3 {
+    font-family: 'DotGothic16', 'Times New Roman', 'Times', serif;
+    align-content: right;
+}
+
 section{
     margin: 1em 0;
     padding-top: 3em;
@@ -146,6 +151,29 @@ section ul{
 
 #projects > article > img {
     width: 100%;
+}
+
+#contact{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    margin-top: 10em;
+    margin-bottom: 2em;
+}
+
+#image-links {
+    display: flex;
+    flex-direction: row;
+    max-width: 250px;
+    max-height: 50px;
+    margin-right: 2rem;
+    justify-content: space-between;
+}
+
+#image-links a img {
+    height: 100%;
+    width: auto;
+    border-radius: 70%;
 }
 
 footer{
