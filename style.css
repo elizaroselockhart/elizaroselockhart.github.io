@@ -1,0 +1,161 @@
+:root{
+    --main-color: #CEB2A7;
+    --accent-dark: #39343C;
+    --accent-light: #95968F;
+    --accent-lighter: #999C9D;
+}
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.618em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 16px;
+    margin-top: 3em;
+    background-color: var(--main-color);
+}
+
+p {
+    color:var(--accent-dark);
+}
+
+header,
+main,
+footer{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+header h1, h2, h3{
+    color: var(--accent-dark);
+}
+
+/*TO WORK ON WHEN THIS ISN'T DUE FOR A GRADE*/
+/*
+#headerImage, #headerText{
+    display:grid;
+    grid-template-columns: 256px auto;
+    background-color: darkslategrey;
+    grid-column-gap: 1em;
+}
+*/
+
+header{
+    padding: 2.5em 0;
+}
+
+header h1{
+    font-family: 'DotGothic16', 'Times New Roman', 'Times', serif;
+    font-weight: bold;
+    font-size: 3em;
+}
+header span{
+    font-family: 'DotGothic16', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+header h1, span {
+    display: flex;
+    align-items: right;
+}
+
+nav {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display:flex;
+    flex-flow:row;
+    justify-content: center;
+
+
+    background: var(--accent-dark); 
+}
+
+nav a {
+    padding: .5em 2em;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+nav a:hover {
+    background: var(--accent-light);
+    color: var(--accent-dark);
+}
+
+section{
+    margin: 1em 0;
+    padding-top: 3em;
+    min-height: 20em;
+}
+
+section > p {
+    margin: 1em 0;
+}
+
+section ul{
+    padding-left: 1.5em;
+}
+
+#aboutMe > div {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 2fr 5fr;
+    margin: 1em auto;
+    align-content: right;
+}
+
+#aboutMe img {
+    width: 100%;
+    align-content: center;
+}
+
+#projects {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+    grid-column-gap: 1em;
+}
+
+#projects > article > h3 > a {
+    text-decoration: none;
+}
+
+#projects article h3 a:visited {
+    color: var(--accent-dark);
+}
+
+#projects article h3 a:hover {
+    color: var(--accent-lighter);
+}
+
+#projects > article > p {
+    background: var(--accent-dark);
+    color: var(--main-color);
+    padding: 1em;
+    text-align: center;
+    font-size: 14px;
+}
+
+#projects > article > img {
+    width: 100%;
+}
+
+footer{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    background: var(--accent-dark);
+    color: var(--main-color);
+
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
