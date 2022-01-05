@@ -1,8 +1,8 @@
 :root{
-    --main-color: #CEB2A7;
-    --accent-dark: #39343C;
-    --accent-light: #95968F;
-    --accent-lighter: #999C9D;
+    --main-color: #4A94A8;
+    --accent-dark: #2B293C;
+    --accent-light: #6a4a73;
+    --accent-lighter: #E2D9CA;
 }
 
 * {
@@ -33,16 +33,6 @@ footer{
 header h1, h2, h3{
     color: var(--accent-dark);
 }
-
-/*TO WORK ON WHEN THIS ISN'T DUE FOR A GRADE*/
-/*
-#headerImage, #headerText{
-    display:grid;
-    grid-template-columns: 256px auto;
-    background-color: darkslategrey;
-    grid-column-gap: 1em;
-}
-*/
 
 header{
     padding: 2.5em 0;
@@ -121,12 +111,77 @@ section ul{
 }
 
 #projects {
-
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 1em;
+}
+
+article p {
+    background-color: var(--accent-dark);
+    color: var(--main-color);
+    padding: 1em;
+    font-size: 14px;
+}
+
+article div img {
+    height: 400px;
+    width: 400px;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/*>>>>>Slideshow Stuff<<<<<*/
+.slideshow-gallery {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slides-fade {
+    display: none;
+    position: relative;
+}
+
+.slides-fade-0, .slides-fade-1, .slides-fade-2, .slides-fade-3 {
+    position: relative;
+}
+
+.numbertext {
+    position: absolute;
+    right: 0;
+    color: var(--accent-dark);
+    background-color: white;
+    border-radius: 0 0 0 6px;
+    padding: 0.5em;
+}
+
+#slideshow-gallery-1, #slideshow-gallery-2, #slideshow-gallery-3, #slideshow-gallery-4 {
+    position: relative;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    color: gray;
+    border-radius: 0 3px 3px 0;
+    font-weight: bold;
+    transition: 0.6s ease;
+    padding: 1rem;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 #projects > article > h3 > a {
@@ -157,7 +212,7 @@ section ul{
     margin: auto;
     width: 50%;
     text-align: center;
-    margin-top: 10em;
+    /* margin-top: 10em; */
     margin-bottom: 2em;
 }
 
@@ -173,7 +228,24 @@ section ul{
 #image-links a img {
     height: 100%;
     width: auto;
-    border-radius: 70%;
+    border-radius: 69%;
+}
+
+#projects > article > .github-link-container {
+    text-align: center;
+    display: block;
+    margin: 1em;
+}
+
+#whats-for-dinner-link {
+    text-align: left;
+    margin: 0em;
+}
+
+#projects > article > a > .github-link {
+    height: 50px;
+    width: 50px;
+    border-radius: 69%;
 }
 
 footer{
