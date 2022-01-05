@@ -123,15 +123,15 @@ article p {
     font-size: 14px;
 }
 
+.project-description {
+    min-height: 285px;
+    background-color: var(--accent-dark);
+    border-radius: 3px;
+}
+
 article div img {
     height: 400px;
     width: 400px;
-}
-
-.project-description {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
 }
 
 /*>>>>>Slideshow Stuff<<<<<*/
